@@ -19,7 +19,7 @@ public class FineServiceImpl implements FineService {
     private final BookTransactionRepo bookTransactionRepo;
     private final FineRepo fineRepo;
     @Override
-    @Scheduled(cron = "0 * * * * *")
+//    @Scheduled(cron = "0 * * * * *")
     public void addFine() {
         List<BookTransaction> allTransactions = bookTransactionRepo.findAll();
         for (BookTransaction bookTransaction : allTransactions) {

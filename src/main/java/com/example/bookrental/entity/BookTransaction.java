@@ -36,10 +36,10 @@ public class BookTransaction  extends AuditingEntity {
     @ManyToOne(targetEntity = Book.class ,cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     Book book;
 
-    @JsonFormat(pattern = "yyyy-mm-dd")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     LocalDate fromDate;
 
-    @JsonFormat(pattern = "yyyy-mm-dd")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     LocalDate toDate;
 
     @Column(name = "rent_status")

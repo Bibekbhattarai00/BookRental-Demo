@@ -10,9 +10,9 @@
 
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-covnqsa1hbls73du0fj0-a.singapore-postgres.render.com/demobookrentalsabeen
-    username: sabeen
-    password: GUfjjJo6ssjfXWNNgs6Jkgf0GkuQJQeP
+    url: jdbc:postgresql://localhost:5432/BookRental
+    username: postgres
+    password: 1234
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -31,8 +31,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: bibek.bhattarai831@gmail.com
-    password: bppd jkwk krrf lccv
+    username: bibek.bhattarai83@gmail.com
+    password: plia kukk nnyo hlci
     properties:
       mail:
         smtp:
